@@ -1,0 +1,30 @@
+body {
+    font-family: 'PT Sans Narrow', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #000;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 36px; 
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 21px;
+    line-height: 26px; 
+    text-transform: uppercase; 
+}
