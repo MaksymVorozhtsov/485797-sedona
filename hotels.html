@@ -1,12 +1,155 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <title>Hotels in Sedona | Because the Grand Canyon sucks!</title>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="css/normalize-7.0.0.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="main-navigation">
+                <a href="index.html" class="main-header-logo"><img src="img/logo.png" width="138" height="70" alt="Логотип сайта города Седона"></a>
+                <ul class="site-navigation">
+                    <li><a href="#">Информация</a></li>
+                    <li><a href="#">Фото и видео</a></li>
+                    <li><a href="#">Карта штата</a></li>
+                    <li><a href="hotels.html">Гостиницы</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main class="container">
+            <h1 class="visually-hidden">Отели города Седона</h1>
+            
+            <section class="filter">
+                <h2 class="visually-hidden">Фильтр отелей города Седона</h2>
+                <form class="hotels-filter-form" action="https://echo.htmlacademy.ru/" method="get" oninput="range-res-from.value=range-from.value">
+                    <fieldset>
+                        <legend>Инфраструктура:</legend>
+                        <ul>
+                            <li class="hotels-filter-option">
+                                <input id="pool" class="hotels-filter-input hotels-filter-input-checkbox" type="checkbox" name="pool" checked>
+                                <label for="pool">Бассейн</label>
+                            </li>
+                            <li class="hotels-filter-option">
+                                <input id="parking" class="hotels-filter-input hotels-filter-input-checkbox" type="checkbox" name="parking">
+                                <label for="parking">Парковка</label>
+                            </li>
+                            <li class="hotels-filter-option">
+                                <input id="wi-fi" class="hotels-filter-input hotels-filter-input-checkbox" type="checkbox" name="wi-fi">
+                                <label for="wi-fi">Wi-fi</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Тип жилья:</legend>
+                        <ul>
+                            <li class="hotels-filter-option">
+                                <input id="hotel" class="hotels-filter-input hotels-filter-input-checkbox" type="checkbox" name="hotel" checked>
+                                <label for="hotel">Гостиница</label>
+                            </li>
+                            <li class="hotels-filter-option">
+                                <input id="motel" class="hotels-filter-input hotels-filter-input-checkbox" type="checkbox" name="motel" checked>
+                                <label for="motel">Мотель</label>
+                            </li>
+                            <li class="hotels-filter-option">
+                                <input id="appartaments" class="hotels-filter-input hotels-filter-input-checkbox" type="checkbox" name="appartaments" checked>
+                                <label for="appartaments">Апартаменты</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Стоимость в сутки (Р):</legend>
+                        <input type="range" name="range-from" id="range-from" min="1000" max="4000" step="100">
+                        <output name="range-res-from"></output>
+                        
+                    </fieldset>
+                    <button class="hotel-filter-button">Показать</button>
+                </form>
+            </section>
+            
+            <section class="hotels-list">
+                <h2 class="visually-hidden">Список отелей города Седона</h2>
+                <div class="sort">
+                    <span class="sort-count">Найдено: 3</span>
+                    <span>Сортировка:</span>
+                    <span class="sort-type sort-type-active">По цене</span>
+                    <a href="#"><span class="sort-type">По типу</span></a>
+                    <a href="#"><span class="sort-type">По рейтингу</span></a>
+                    <span class="sort-dir sort-dir-active">По убыванию</span>
+                    <span class="sort-dir">По возрастанию</span>
+                </div>
+                <ul>
+                    <li class="hotels-item">
+                        <div class="hotels-item-img">
+                            <img src="img/hotel-1.jpg" alt="Amara Resort & Spa" width="135" height="90">   
+                        </div> 
+                        <div class="hotels-item-info">
+                            <span hotel-item-info-title>Amara Resort & Spa</span>
+                            <span hotel-item-info-type>Гостиница</span>
+                            <span hotel-item-info-price>от 4000 Р.</span>
+                            <button class="button button-info">Подробнее</button>
+                            <button class="button button-booking">Забронировать</button>
+                        </div>
+                        <div class="hotels-item-rating">
+                            <span class="hotels-item-rating-stars hotels-item-rating-stars-4"><img src="img/stars.svg"></span> <!-- размер и подпись не заданы т.к. это временная вставка картинки, в дальнейшем планирую ставить ее на бекграунд в span и в зависимости от кол-ва звезд просто менять его ширину. Аналогично и для следующих отелей -->
+                            <span class="hotels-item-rating-userrate">Рейтинг: 8,5</span>
+                        </div> 
+                    </li>
+                    <li class="hotels-item">
+                        <div class="hotels-item-img">
+                            <img src="img/hotel-2.jpg" alt="Desert Quail Inn" width="135" height="90">   
+                        </div> 
+                        <div class="hotels-item-info">
+                            <span hotel-item-info-title>Desert Quail Inn</span>
+                            <span hotel-item-info-type>Мотель</span>
+                            <span hotel-item-info-price>от 3000 Р.</span>
+                            <button class="button button-info">Подробнее</button>
+                            <button class="button button-booking">Забронировать</button>
+                        </div>
+                        <div class="hotels-item-rating">
+                            <span class="hotels-item-rating-stars hotels-item-rating-stars-3"><img src="img/stars.svg"></span>
+                            <span class="hotels-item-rating-userrate">Рейтинг: 8,9</span>
+                        </div> 
+                    </li>
+                    <li class="hotels-item">
+                        <div class="hotels-item-img">
+                            <img src="img/hotel-3.jpg" alt="Villas at poco diablo" width="135" height="90">   
+                        </div> 
+                        <div class="hotels-item-info">
+                            <span hotel-item-info-title>Villas at poco diablo</span>
+                            <span hotel-item-info-type>Апартаменты</span>
+                            <span hotel-item-info-price>от 2000 Р.</span>
+                            <button class="button button-info">Подробнее</button>
+                            <button class="button button-booking">Забронировать</button>
+                        </div>
+                        <div class="hotels-item-rating">
+                            <span class="hotels-item-rating-stars hotels-item-rating-stars-2"><img src="img/stars.svg"></span>
+                            <span class="hotels-item-rating-userrate">Рейтинг: 9,2</span>
+                        </div> 
+                    </li>
+                </ul>
+            </section>
+        </main>
+        
+        <footer class="main-footer">
+            <p class="footer-tag">#VISITSEDONA</p>
+            <div class="footer-social">
+                <h2 class="visually-hidden">Город Седона в социальных сетях</h2>
+                <ul>
+                    <li><a href="" class="social-button" href="#">Twitter</a></li>
+                    <li><a href="" class="social-button" href="#">Facebook</a></li>
+                    <li><a href="" class="social-button" href="#">YouTube</a></li>
+                </ul>
+            </div>
+            <p class="footer-copywright">
+                <b>WEBSITE BY:</b>
+                <a href="http://htmlacademy.ru/" class="footer-copywright-link" target="_blank"><img src="img/html-academy-logo.svg" alt="HTML Academy" width="115" height="41"></a>
+            </p>   
+        </footer>
+    </body>
 </html>
