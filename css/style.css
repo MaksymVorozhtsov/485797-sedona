@@ -8,6 +8,12 @@ body {
     text-transform: uppercase;
 }
 
+section, div, main, footer {
+    margin: 0;
+    padding: 0;
+}
+
+
 a {
     text-decoration: none;
 }
@@ -45,14 +51,26 @@ h3 {
 .site-navigation,
 .reasons-list,
 .features-list, 
-.footer-social ul,
+.footer-social-list,
 .hotels-filter,
 .hotels {
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-header-logo {
+    position: absolute;
+    top: 0;
+    left: 605px;
+    width: 138px;
+    height: 70px;
+    z-index: 1;
 }
 
 .main-navigation {
     background-color: #fff;
+    padding: 15px 80px;
 }
 
 .main-navigation a {
@@ -72,20 +90,69 @@ h3 {
     color: #b2b2b2;
 }
 
+.site-navigation {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.site-navigation li {
+    display: block;
+    width: 200px;
+    margin-right: 50px;
+}
+
+main, footer {
+    background-color: #fff;
+}
+
+.headline {
+    position: relative;
+}
+
+.headline-image-text {
+    position: absolute;
+    top: 75px;
+    left: 375px;
+}
+.headline p {
+    text-align: center;
+    margin: 50px 0 30px 0;
+}
+
 .headline span {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
 }
 
+.reasons-wrap {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.reasons-item-text-block {
+    text-align: center;
+    padding: 50px 60px;
+}
+
+.reasons-list {
+    display: flex;
+    justify-content: space-between;
+    background: #f2f2f2;
+}
+
 .reasons-text-headline {
     font-size: 14px;
     line-height: 26px;
     color: #333;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-.reasons-item {
+.reasons-list li {
+    padding: 25px 70px 55px 70px;
     color: #000;
+    text-align: center;
 }
 
 .reasons-item-blue {
@@ -99,10 +166,24 @@ h3 {
     line-height: 21px;
 }
 
+.features-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-item {
+    padding: 50px 60px;
+    text-align: center;
+}
+
 .features-text {
     font-size: 14px;
     line-height: 21px;
     color: #333;
+}
+
+.hotel-search {
+    padding-top: 20px;
 }
 
 .hotel-search-healine {
@@ -116,8 +197,11 @@ h3 {
     font-size: 14px;
     line-height: 24px;
     text-align: center;
+    margin-top: 25px;
 }
 .hotel-search-button {
+    margin-top: 35px;
+    margin-left: 315px;
     font-family: inherit;
     font-size: 21px;
     line-height: 26px;
@@ -139,15 +223,78 @@ h3 {
     color: #857871;
 }
 
+.main-footer {
+    background-color: rgba(254, 254, 254, 0.8)
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 85px 20px 80px;
+}
+
 .footer-tag {
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
 }
 
+.footer-social-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-social-item {
+    width: 46px;
+    height: 48px;
+    background-color: #81b3d2;
+    cursor: pointer;
+    margin-right: 6px;
+}
+
+.footer-social-item:hover,
+.footer-social-item:focus,
+.footer-social-item:active {
+    background-color: #669EC1; 
+}
+
+.footer-social-item:active svg #twitter,
+.footer-social-item:active svg #facebook,
+.footer-social-item:active svg #youtube {
+    fill: #8AB6D1;
+}
+
+.social-button-twitter {
+    display: block;
+    margin-left: 16px;
+    margin-top: 14px;
+}
+
+.social-button-facebook {
+    display: block;
+    margin-left: 16px;
+    margin-top: 14px;
+}
+
+.social-button-youtube {
+    display: block;
+    margin-left: 13px;
+    margin-top: 14px;
+}
+
 .footer-copywright {
     font-size: 14px;
     line-height: 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-copywright-link {
+    display: block;
+    margin-top: 5px;
+    margin-left: 10px;
 }
 
 svg:hover #html-academy-logo {
@@ -156,6 +303,10 @@ svg:hover #html-academy-logo {
 
 svg:active #html-academy-logo {
     fill: #bdbbbc;
+}
+
+.hotel-search-form {
+    max-width: 500px;
 }
 
 .hotel-search-form-button {
@@ -184,6 +335,20 @@ svg:active #html-academy-logo {
 .modal {
     color: #000;
     background-color: #fff;
+    /*display: none;*/
+}
+
+.modal p {
+    max-width: 450px;
+}
+
+.modal-search {
+    position: absolute;
+    left: 315px;
+    top: 2120px;
+    z-index: 1;
+    padding: 50px 70px;
+    width: 570px;
 }
 
 .hotel-search-form label {
@@ -232,12 +397,24 @@ svg:active #html-academy-logo {
 }
 
 .hotels-filter-form {
+    display: flex;
+    justify-content: flex-start;
     color: #fff;
     font-family: inherit;
     font-size: 16px; 
     line-height: 26px;
     text-transform: uppercase;
     font-weight: bold;
+    margin: 0;
+    padding: 30px 65px;
+}
+
+.hotels-filter-infrastructure-block {
+    margin-right: 100px;
+}
+
+.hotels-filter-range-block {
+    margin-left: auto;
 }
 
 .hotels-filter-form label {
@@ -266,15 +443,29 @@ svg:active #html-academy-logo {
     background: #fff;
 }
 
+.sort {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 80px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.sort span {
+    display: block;
+}
+
 .sort-count {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
+    margin-right: 50px;
 }
 
 .sort-text {
     font-size: 12px;
     line-height: 18px;
+    margin-right: 40px;
 }
 
 .sort-type {
@@ -282,16 +473,45 @@ svg:active #html-academy-logo {
     line-height: 18px;
     color: #a9a9a9;
     text-decoration: none;
+    margin-right: 30px;
+    margin-top: 2px;
     border-bottom: 1px dotted #81b3d2;
 }
 
 .sort-type-active {
     color: #81b3d2;
-    text-decoration: none;
-    border: 0;
+    border-bottom: 1px solid transparent;
+}
+
+.sort-dir {
+    margin-left: auto;
+    display: flex;
+}
+
+.hotels-item {
+    display: flex;
+    justify-content: flex-start;
+    padding: 50px 80px 45px 80px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.hotels-item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hotels-item-info-wrap {
+    padding-bottom: 5px;
+}
+
+.hotels-item-img {
+    margin-right: 30px;
 }
 
 .hotel-item-info-title {
+    display: block;
+    margin-top: -5px;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
@@ -301,6 +521,10 @@ svg:active #html-academy-logo {
 .hotel-item-info-price {
     font-size: 14px;
     line-height: 21px;
+}
+
+.hotels-item-rating {
+    margin-left: auto;
 }
 
 .hotels-item-rating-userrate {
