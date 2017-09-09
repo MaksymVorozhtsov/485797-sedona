@@ -5,7 +5,7 @@
         <title>Hotels in Sedona | Because the Grand Canyon sucks!</title>
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
         <link href="css/normalize-7.0.0.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="css/styles.min.css" rel="stylesheet">
     </head>
     <body>
         <div class="container">
@@ -47,7 +47,7 @@
                                 </li>
                             </ul>
                         </fieldset>
-                        <fieldset>
+                        <fieldset class="type">
                             <legend>Тип жилья:</legend>
                             <ul class="hotels-filter">
                                 <li class="hotels-filter-option">
@@ -117,7 +117,7 @@
                                 </div>
                             </div>
                             <div class="hotels-item-rating">
-                                <span class="hotels-item-rating-stars hotels-item-rating-stars-4"><img src="img/stars.svg"></span>
+                                <span class="hotels-item-rating-stars hotels-item-rating-stars-4"><img src="img/stars.png" alt="Sedona hotel rating"></span>
                                 <div class="hotels-item-rating-userrate"><span>Рейтинг: 8,5</span></div>
                             </div> 
                         </li>
@@ -137,7 +137,7 @@
                                 </div>
                             </div>
                             <div class="hotels-item-rating">
-                                <span class="hotels-item-rating-stars hotels-item-rating-stars-3"><img src="img/stars.svg"></span>
+                                <span class="hotels-item-rating-stars hotels-item-rating-stars-3"><img src="img/stars.png" alt="Sedona hotel rating"></span>
                                 <div class="hotels-item-rating-userrate"><span>Рейтинг: 8,9</span></div>
                             </div> 
                         </li>
@@ -157,7 +157,7 @@
                                 </div>
                             </div>
                             <div class="hotels-item-rating">
-                                <span class="hotels-item-rating-stars hotels-item-rating-stars-2"><img src="img/stars.svg"></span>
+                                <span class="hotels-item-rating-stars hotels-item-rating-stars-2"><img src="img/stars.png" alt="Sedona hotel rating"></span>
                                 <div class="hotels-item-rating-userrate"><span>Рейтинг: 9,2</span></div>
                             </div> 
                         </li>
@@ -172,9 +172,8 @@
                         <h2 class="visually-hidden">Город Седона в социальных сетях</h2>
                         <ul class="footer-social-list">
                             <li class="footer-social-item">
-                                <a href="" class="social-button-twitter" href="#" target="_blank"><?xml version="1.0" encoding="utf-8"?>
-                                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                <a class="social-button-twitter" href="#" target="_blank">
+                                    <svg version="1.1" id="twitter-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                          width="17px" height="15px" viewBox="0 0 17 15" enable-background="new 0 0 17 15" xml:space="preserve">
                                             <path id="twitter" fill="#FFFFFF" d="M10.95,0.144c1.685-0.496,2.983,0.27,3.577,1.179c0.673-0.231,1.33-0.481,2.011-0.708
                                                 c-0.004,0.861-0.522,1.513-0.856,1.768c0.685,0.17,1.303-0.491,1.303-0.491c-0.168,1-1.006,1.788-1.563,2.024
@@ -186,21 +185,17 @@
                               </a>
                            </li>
                             <li class="footer-social-item">
-                                <a href="" class="social-button-facebook" href="#" target="_blank"><?xml version="1.0" encoding="utf-8"?>
-                                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                                    <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                <a class="social-button-facebook" href="#" target="_blank">
+                                    <svg version="1.1" id="facebook-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                          width="12px" height="22px" viewBox="0 0 12 22" enable-background="new 0 0 12 22" xml:space="preserve">
                                     <path id="facebook" fill="#FFFFFF" d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z"/>
                                     </svg><span class="visually-hidden">Facebook</span>
                                </a>
                            </li>
                             <li class="footer-social-item">
-                                <a href="" class="social-button-youtube" href="#" target="_blank"><?xml version="1.0" encoding="utf-8"?>
-                                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                <a class="social-button-youtube" href="#" target="_blank">
+                                    <svg version="1.1" id="youtube-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                          width="20px" height="16px" viewBox="0 0 20 16" enable-background="new 0 0 20 16" xml:space="preserve">
-                                    <image overflow="visible" enable-background="new    " width="20" height="16" xlink:href="youtube.png" >
-                                    </image>
                                     <path id="youtube" fill="#FFFFFF" d="M17,0H3C1.35,0,0,1.35,0,3v10c0,1.65,1.35,3,3,3h14c1.65,0,3-1.35,3-3V3C20,1.35,18.65,0,17,0z
                                          M6.027,11.998V4.002L15.014,8L6.027,11.998z"/>
                                     </svg>
@@ -241,7 +236,6 @@
                                 l-1.7,1l-8.1-5l0,1.5l6.9,4.3l-0.1,0l-0.1,0.1l-1,0.6l-5.7-3.6l0,1.5l4.5,2.8l-1.1,0.7l0,0l-3.4-2.1l0,1.5l2.2,1.4l-2.3,1.4
                                 L2.1,16.4L15.4,8v0L29,16.2L29,16.2z M29,14.7L15.5,6.4v0l0,0l0,0v0L2,14.7V3.6l13.5-1.5L29,3.6L29,14.7L29,14.7z"/>
                             </svg>
-
                         </a>
                     </p>
                 </div>   

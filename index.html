@@ -5,7 +5,7 @@
         <title>Sedona | Because the Grand Canyon sucks!</title>
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
         <link href="css/normalize-7.0.0.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="css/styles.min.css" rel="stylesheet">
     </head>
     <body>
         <div class="container">
@@ -39,7 +39,7 @@
                     <div class="reasons-item-blue">
                         <div class="reasons-wrap">
                             <div class="reasons-item-text-block-blue">
-                                <h3 class="reasons-title">НАСТОЯЩИЙ ГОРОДОК</h3>
+                                <h3 class="reasons-title">НАСТОЯЩИЙ<br>ГОРОДОК</h3>
                                 <span class="reasons-number">№1</span><br>
                                 <span class="reasons-text">Седона — не аттракцион для туристов, там течет своя жизнь</span>
                             </div>
@@ -75,7 +75,7 @@
                         <div class="reasons-wrap">
                             <img src="img/reasons-02.jpg" alt="Причина посетить город Седона - мост дьявола" width="800" height="256">
                             <div class="reasons-item-text-block-blue">
-                                <h3 class="reasons-title">ТАМ ЕСТЬ Мост дьявола</h3>
+                                <h3 class="reasons-title">ТАМ ЕСТЬ<br>Мост дьявола</h3>
                                 <span class="reasons-number">№2</span><br>
                                 <span class="reasons-text">Да, по нему можно пройти! Если конечно вы осмелитесь</span>
                             </div>
@@ -84,17 +84,17 @@
 
                     <ul class="reasons-list">
                         <li class="reasons-item">
-                            <h3 class="reasons-title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+                            <h3 class="reasons-title">НЕБОЛЬШАЯ<br>ПЛОЩАДЬ</h3>
                             <span class="reasons-number">№3</span><br>
                             <span class="reasons-text">Все достопримечательности находятся очень близко</span>
                         </li>
                         <li class="reasons-item">
-                            <h3 class="reasons-title">КРАСИВАЯ ДОРОГА</h3>
+                            <h3 class="reasons-title">КРАСИВАЯ<br>ДОРОГА</h3>
                             <span class="reasons-number">№4</span><br>
-                            <span class="reasons-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</span
+                            <span class="reasons-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</span>
                         </li>
                         <li class="reasons-item">
-                            <h3 class="reasons-title">НАСТОЯЩИЙ ГОРОДОК</h3>
+                            <h3 class="reasons-title">НАСТОЯЩИЙ<br>ГОРОДОК</h3>
                             <span class="reasons-number">№5</span><br>
                             <span class="reasons-text">Большинство едет в гранд каньон и толпится там</span>
                         </li>
@@ -109,7 +109,7 @@
                     <p class="hotel-search-text"><span>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</span></p>
                     <button class="hotel-search-button">поиск гостиницы в Седоне</button>
                     
-                    <section class="modal modal-search">
+                    <div class="modal modal-search">
                         <form class="hotel-search-form" action="https://echo.htmlacademy.ru/" method="get">
                             <div class="form-text-wrap">
                                 <div class="form-text-wrap-labels">
@@ -119,9 +119,7 @@
                                 <div class="form-text-wrap-inputs">
                                     <input id="date-in" name="date-in" type="text" value="24 Апреля 2017">
                                     <div class="calendar-svg calendar-svg-date-in">
-                                       <?xml version="1.0" encoding="utf-8"?>
-                                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        <svg version="1.1" id="date-in-calendar-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                              width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
                                         <g id="calendar_1_">
                                             <path d="M19.251,2.025h-2.845V0.648c0-0.381-0.295-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
@@ -143,13 +141,11 @@
                                         </g>
                                         </svg>
                                     </div>
-                                    <input id="date-out" name="date-out" type="text" value="04 Июля 2017">
+                                    <input id="date-out" name="date-out" type="text" value="4 Июля 2017">
                                     <div class="calendar-svg calendar-svg-date-out">
-                                       <?xml version="1.0" encoding="utf-8"?>
-                                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        <svg version="1.1" id="date-out-calendar-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                              width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
-                                        <g id="calendar_1_">
+                                        <g id="calendar_2_">
                                             <path d="M19.251,2.025h-2.845V0.648c0-0.381-0.295-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
                                                 c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689
                                                 c-0.363,0-0.657,0.308-0.657,0.689v1.377H1.75C0.784,2.025,0,2.847,0,3.862v16.302C0,21.18,0.784,22,1.75,22h17.501
@@ -173,7 +169,7 @@
                             </div>
                             <div class="form-num-wrap">  
                                 <div class="form-num form-num-adults">
-                                    <label for="adults">Взрослые:</label>
+                                    <label class="adults-label" for="adults">Взрослые:</label>
                                     <div class="form-num-pm form-num-minus-adults">
                                         <svg width="11px" height="11px">
                                         <rect x="4" y="0" transform="matrix(4.486906e-011 -1 1 4.486906e-011 -2.467795e-010 11)" width="3" height="11"/>
@@ -203,15 +199,15 @@
                                     </div>
                                 </div>
                             </div> 
-
                             <button class="hotel-search-form-button">Найти</button>
                         </form>
-                    </section>
+                    </div>
                     
                 </section>
 
                 <section class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d470239.0890976374!2d-111.91959083513456!3d34.88303252873116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2spl!4v1504638462439" width="1200" height="594" frameborder="0" style="border:0" style="pointer-events:none" allowfullscreen></iframe>
+                    <h2 class="visually-hidden">Карта города Седона</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d470239.0890976374!2d-111.91959083513456!3d34.88303252873116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2spl!4v1504638462439" width="1200" height="594" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </section>
 
             </main>
@@ -223,9 +219,8 @@
                         <h2 class="visually-hidden">Город Седона в социальных сетях</h2>
                         <ul class="footer-social-list">
                             <li class="footer-social-item">
-                                <a href="" class="social-button-twitter" href="#" target="_blank"><?xml version="1.0" encoding="utf-8"?>
-                                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                <a class="social-button-twitter" href="#" target="_blank">
+                                    <svg version="1.1" id="twitter-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                          width="17px" height="15px" viewBox="0 0 17 15" enable-background="new 0 0 17 15" xml:space="preserve">
                                             <path id="twitter" fill="#FFFFFF" d="M10.95,0.144c1.685-0.496,2.983,0.27,3.577,1.179c0.673-0.231,1.33-0.481,2.011-0.708
                                                 c-0.004,0.861-0.522,1.513-0.856,1.768c0.685,0.17,1.303-0.491,1.303-0.491c-0.168,1-1.006,1.788-1.563,2.024
@@ -237,21 +232,17 @@
                               </a>
                            </li>
                             <li class="footer-social-item">
-                                <a href="" class="social-button-facebook" href="#" target="_blank"><?xml version="1.0" encoding="utf-8"?>
-                                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                                    <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                <a class="social-button-facebook" href="#" target="_blank">
+                                    <svg version="1.1" id="facebook-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                          width="12px" height="22px" viewBox="0 0 12 22" enable-background="new 0 0 12 22" xml:space="preserve">
                                     <path id="facebook" fill="#FFFFFF" d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z"/>
                                     </svg><span class="visually-hidden">Facebook</span>
                                </a>
                            </li>
                             <li class="footer-social-item">
-                                <a href="" class="social-button-youtube" href="#" target="_blank"><?xml version="1.0" encoding="utf-8"?>
-                                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                <a class="social-button-youtube" href="#" target="_blank">
+                                    <svg version="1.1" id="youtube-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                          width="20px" height="16px" viewBox="0 0 20 16" enable-background="new 0 0 20 16" xml:space="preserve">
-                                    <image overflow="visible" enable-background="new    " width="20" height="16" xlink:href="youtube.png" >
-                                    </image>
                                     <path id="youtube" fill="#FFFFFF" d="M17,0H3C1.35,0,0,1.35,0,3v10c0,1.65,1.35,3,3,3h14c1.65,0,3-1.35,3-3V3C20,1.35,18.65,0,17,0z
                                          M6.027,11.998V4.002L15.014,8L6.027,11.998z"/>
                                     </svg>
@@ -297,9 +288,7 @@
                     </p>
                 </div>   
             </footer>
-        </div> 
-            
-            <script src="js/script.js"></script>
-           
+        </div>
+        <script src="js/script.min.js"></script>
     </body>
 </html>
